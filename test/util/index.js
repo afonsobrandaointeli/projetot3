@@ -19,10 +19,9 @@ const USER = {
 
 const FILE = (fieldName) => {
     return {
-        upload: async (options, callback = async () => {}) => {
-            console.log("Simulando upload do arquivo: ", fieldName);
-            console.log("Opções: ", options);
-            console.log("Callback: ", callback);
+        upload: async (options, callback = async (a, b) => {
+            return;
+        }) => {
             await callback(null, [{ fd: "caminho/do/arquivo" }]);
         },
     };
