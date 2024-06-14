@@ -18,7 +18,8 @@
     "sails-hook-sockets": "^3.0.0",
     "sails-postgresql": "^5.0.1",
     "sinon": "^18.0.0",
-    "supertest": "^7.0.0"
+    "supertest": "^7.0.0",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "eslint": "5.16.0"
@@ -27,7 +28,8 @@
     "start": "NODE_ENV=production node app.js",
     "test": "node ./node_modules/mocha/bin/mocha test/lifecycle.test.js test/integration/**/*.test.js",
     "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
-    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo",
+    "build": "grunt build --prod"
   },
   "main": "app.js",
   "repository": {
