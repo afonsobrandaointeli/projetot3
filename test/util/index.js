@@ -21,7 +21,7 @@ const FILE = (fieldName) => {
   return {
     upload: (options, callback) => {
       // Simular o upload do arquivo
-      callback(null, [{ fd: "caminho/do/arquivo" }]);
+     callback(() => [{ fd: "caminho/do/arquivo" }]);
     },
   };
 };
