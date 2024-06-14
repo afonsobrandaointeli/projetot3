@@ -2,6 +2,8 @@
 
 a [Sails v1](https://sailsjs.com) application
 
+Running the .github/workflows/ci.yml file in the ACT workflow
+![Workflow with ACT](image.png)
 
 ### Links
 

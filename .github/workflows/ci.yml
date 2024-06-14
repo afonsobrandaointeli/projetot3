@@ -1,14 +1,17 @@
 name: Sails Test Workflow
 
-on:
+on: 
   push:
     branches:
       - main
       - develop
+  pull_request_review:
+    types: []
   pull_request:
     branches:
       - main
       - develop
+  workflow_dispatch:
 
 jobs:
   checkout-code:
